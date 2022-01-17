@@ -23,15 +23,15 @@
     function verificar(){
     var pais = (document.getElementById(`txtlocation`).value)
     var res = document.getElementById('res')
+    
     res.innerHTML = `<p> Você nasceu no: <strong>${pais}</strong> </p>`
     
-    if(pais == 1){        
+    if(pais == 'Brasil' || 'brasil'){        
         res.innerHTML += (`<p> você é: <strong>brasileiro</strong></p>`)
     }else 
         res.innerHTML += (`<p>você é: <strong>estrangeiro</strong></p>`)
     
-}       // PROBLEMAS: O CODIGO PRECISA LER O PAÍS QUE O USUARIO DIGITAR E ENTÃO ENTENDER COMO UM TEXTO.
-        // RESOLUÇÃO: CONVERTER A VARIAVEL PARA TEXTO (STRING)
+}       
 </script>
 
 </body>
